@@ -1,0 +1,17 @@
+Index: vendor/shardj/zf1-future/library/Zend/Db/Statement/Pdo.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/vendor/shardj/zf1-future/library/Zend/Db/Statement/Pdo.php b/vendor/shardj/zf1-future/library/Zend/Db/Statement/Pdo.php
+--- a/vendor/shardj/zf1-future/library/Zend/Db/Statement/Pdo.php
++++ b/vendor/shardj/zf1-future/library/Zend/Db/Statement/Pdo.php	(date 1738062562789)
+@@ -231,7 +231,7 @@
+             }
+         } catch (PDOException $e) {
+             require_once 'Zend/Db/Statement/Exception.php';
+-            $message = sprintf('%s, query was: %s,', $e->getMessage(), $this->_stmt->queryString);
++            $message = sprintf('%s, query was: %s, params: %s', $e->getMessage(), $this->_stmt->queryString, var_export($params, true));
+             throw new Zend_Db_Statement_Exception($message, (int) $e->getCode(), $e);
+         }
+     }
