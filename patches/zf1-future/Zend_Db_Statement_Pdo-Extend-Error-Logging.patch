@@ -1,11 +1,5 @@
-Index: vendor/shardj/zf1-future/library/Zend/Db/Statement/Pdo.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
-diff --git a/vendor/shardj/zf1-future/library/Zend/Db/Statement/Pdo.php b/vendor/shardj/zf1-future/library/Zend/Db/Statement/Pdo.php
---- a/vendor/shardj/zf1-future/library/Zend/Db/Statement/Pdo.php
-+++ b/vendor/shardj/zf1-future/library/Zend/Db/Statement/Pdo.php	(date 1738062562789)
+--- /dev/null
++++ ../library/Zend/Db/Statement/Pdo.php
 @@ -231,7 +231,7 @@
              }
          } catch (PDOException $e) {
